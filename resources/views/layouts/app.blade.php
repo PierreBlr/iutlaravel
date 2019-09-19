@@ -150,9 +150,9 @@
         </nav>
 
         <main class="py-4">
-            <div class="jumbotron bg-info mb-3">
+            
             @yield('content')
-            </div>
+            
         </main>
     </div>
 </body>

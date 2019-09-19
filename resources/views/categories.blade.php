@@ -5,9 +5,19 @@
 
 @section('content')
 <div class="container">
-    <h1>Categories</h1>
+    <div class="jumbotron bg-light mb-5">
+    <h1 class="display -3">Categories</h1>
     @foreach ($categories as $categorie)
-        <h2><a href="{{ route('categorie.show', ['categorie' => $categorie]) }}">{{ $categorie->name}}</a></h2>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card-title">
+                <div class="card bg-light mb-3">
+                    <h2><a href="{{ route('categorie.show', ['categorie' => $categorie]) }}">{{ $categorie->name}}</a></h2>
+                </div>
+            </div>
+        </div>
+    </div>
     @endforeach
+</div>
 </div>
 @endsection

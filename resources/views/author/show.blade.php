@@ -4,7 +4,9 @@
 @endsection
 
 @section('content')
+
 <div class="container">
+    <div class="jumbotron bg-info mb-5">
     <h1>{{ $author->prenom}} {{ $author->nom}}</h1>
     
     <ul>
@@ -23,5 +25,6 @@
             <button type="submit" class="btn btn-danger">Supprimer</button>
         </form>
     @endcan
+</div>
 </div>    
 @endsection
