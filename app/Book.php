@@ -17,4 +17,8 @@ class Book extends Model
     function categories(){
         return $this->belongsToMany('App\Categorie');
     }
+    function comments(){
+        return $this->hasMany('App\Comment');
+    }
+
 }
